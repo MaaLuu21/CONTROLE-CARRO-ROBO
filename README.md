@@ -1,3 +1,5 @@
 # carro_app
 
-A new Flutter project.
+Projeto final de TCC.
+
+FATEC - Ribeirão Preto

@@ -1,4 +1,4 @@
-import 'package:carro_app/controleF.dart';
+import 'package:carro_app/View/controleF.dart';
 import 'package:flutter/material.dart';
 
 void main() {
