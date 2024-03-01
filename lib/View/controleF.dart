@@ -29,6 +29,7 @@ class _ControleTelaState extends State<ControleTela> {
           PopupMenuButton<int>(
             itemBuilder: (context) => [
               PopupMenuItem(
+                //!!!!!!!!!!VER COMO MUDAR A COR DO FUNDO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 value: 1,
                 child: StatefulBuilder(
                   builder: (context, setState) {
@@ -62,18 +63,11 @@ class _ControleTelaState extends State<ControleTela> {
         ],
         backgroundColor: Colors.black,
       ),
-      
       body: Column(
         children: [
           //SizedBox(height: 1,),
           Expanded(
             child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/controle.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
               child: Stack(
                 alignment: Alignment.topCenter,
                 children: [
@@ -90,10 +84,10 @@ class _ControleTelaState extends State<ControleTela> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 128, bottom: 8),
+                                  padding: const EdgeInsets.only(left: 90, bottom: 50),
                                   child: InkWell(
                                     child: TriangularButton(
-                                      size: 90,
+                                      size: 160,
                                       onPressed: () {
                                         print('Botão triangular pressionado!');
                                       },
@@ -101,12 +95,12 @@ class _ControleTelaState extends State<ControleTela> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 128, bottom: 105),
+                                  padding: const EdgeInsets.only(left: 90, bottom: 60),
                                   child: Transform(
                                     alignment: Alignment.center,
                                     transform: Matrix4.rotationZ(pi),
                                     child: TriangularButton(
-                                      size: 90,
+                                      size: 160,
                                       onPressed: () {
                                         print('Botão pressionado');
                                       },
@@ -120,32 +114,31 @@ class _ControleTelaState extends State<ControleTela> {
                             child: Align(
                               alignment: Alignment.centerRight,
                               child: Row(
-                                //ADICONAR BOTÕES SECUNDARIOS PARA OUTRAS FORMAS DE CURVA DO CARRO
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 15, bottom: 80),
+                                    padding: const EdgeInsets.only(right: 60, bottom: 60),
                                     child: Transform(
                                       alignment: Alignment.center,
                                       transform: Matrix4.rotationZ(-pi / 2),
                                       child: TriangularButton(
-                                        size: 90,
+                                        size: 160,
                                         onPressed: () {
-                                          print('Botão triangular pressionado de ponta cabeça!');
+                                          print('Botão triangular pressionado');
                                         },
                                       ),
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 90, bottom: 80),
+                                    padding: const EdgeInsets.only(right: 90, bottom: 60),
                                     child: Transform(
                                       alignment: Alignment.center,
                                       transform: Matrix4.rotationZ(pi / 2),
                                       child: TriangularButton(
-                                        size: 90,
+                                        size: 160,
                                         onPressed: () {
-                                          print('Botão triangular pressionado de ponta cabeça!');
+                                          print('Botão triangular pressionado');
                                         },
                                       ),
                                     ),
