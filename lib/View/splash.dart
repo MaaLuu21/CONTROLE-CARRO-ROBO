@@ -23,7 +23,9 @@ class _SplashscreenState extends State<Splashscreen> {
       //logoWidth: 160,
       title: Text('SEJA BEM VINDO',
               style: TextStyle(
-              fontSize: 28,
+                fontFamily: 'Anton',
+              fontSize: 55,
+              color: Colors.black,
             ),
           ),
           backgroundColor: Colors.white,
