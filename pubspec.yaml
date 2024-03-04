@@ -38,4 +38,6 @@ flutter:
   assets:
    - assets/controle.png
    - assets/controle.jpeg
+   - assets/fundo-png.png
+
 
