@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:math';
-import '../botaoTriangular.dart';
+import '../model/botaoTriangular.dart';
 
 class ControleTela extends StatefulWidget {
   const ControleTela({Key? key}) : super(key: key);
