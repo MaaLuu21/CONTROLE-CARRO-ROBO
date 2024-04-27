@@ -20,7 +20,10 @@ class _ControleTelaState extends State<ControleTela> {
     super.initState();
     SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeRight]);
   }
-
+Color _getBackgroundColor(bool switchValue) {
+  // Retorna a cor de fundo com base no valor do switch.
+  return switchValue ? Colors.green : Colors.black;
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,32 +36,35 @@ class _ControleTelaState extends State<ControleTela> {
                 value: 1,
                 child: StatefulBuilder(
                   builder: (context, setState) {
-                    return Row(
-                      children: [
-                        Icon(Icons.bluetooth, color: Colors.black,),
-                        SizedBox(width: 15),
-                        Spacer(),
-                        Switch(
-                          value: _switchValue,
-                          onChanged: (value) {
-                            setState(() {
-                              _switchValue = value;
-                            });
-                          },
-                          activeColor: Color.fromARGB(255, 0, 0, 0),
-                        ),
-                      ],
+                    return Container(
+                      color: _getBackgroundColor(_switchValue),
+                      child: Row(
+                        children: [
+                          Icon(Icons.bluetooth, color: Colors.black,),
+                          SizedBox(width: 15),
+                          Spacer(),
+                          Switch(
+                            value: _switchValue,
+                            onChanged: (value) {
+                              setState(() {
+                                _switchValue = value;
+                              });
+                              setState((){});
+                            },
+                            activeColor: Color.fromARGB(255, 38, 255, 0),
+                          ),
+                        ],
+                      ),
                     );
                   },
                 ),
               ),
             ],
-            icon: Icon(Icons.more_vert, color: Colors.white,),
+            icon: Icon(Icons.more_vert, color: Colors.white),
             onSelected: (value) {
               if (value == 1) {
-                // Ação para abrir as configurações
               }
-            },
+            }, 
           ),
         ],
         backgroundColor: Colors.black,
