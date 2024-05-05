@@ -10,7 +10,6 @@ class Splashscreen extends StatefulWidget {
   @override
   State<Splashscreen> createState() => _SplashscreenState();
 }
-
 class _SplashscreenState extends State<Splashscreen> {
   @override
     void initState() {
@@ -21,8 +20,9 @@ class _SplashscreenState extends State<Splashscreen> {
     return EasySplashScreen(
       logo: Image.asset('assets/fundo-png.png'),
       //logoWidth: 160,
+      // ignore: prefer_const_constructors
       title: Text('SEJA BEM VINDO',
-              style: TextStyle(
+              style: const TextStyle(
                 fontFamily: 'Micro5',
               fontSize: 110,
               fontWeight: FontWeight.bold,
@@ -31,9 +31,9 @@ class _SplashscreenState extends State<Splashscreen> {
           ),
           backgroundColor: Colors.white,
           showLoader: true,
-          loadingText: Text('Carregando...'),
+          loadingText: const Text('Carregando...'),
           durationInSeconds: 3,
-          navigator: ControleTela(),
-    );;
+          navigator: const ControleTela(),
+    );
   }
 }

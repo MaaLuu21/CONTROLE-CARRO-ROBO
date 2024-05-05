@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:math';
-import '../model/botaoTriangular.dart';
 
 class ControleTela extends StatefulWidget {
   const ControleTela({Key? key}) : super(key: key);
@@ -20,58 +19,31 @@ class _ControleTelaState extends State<ControleTela> {
     super.initState();
     SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeRight]);
   }
-Color _getBackgroundColor(bool switchValue) {
-  // Retorna a cor de fundo com base no valor do switch.
-  return switchValue ? Colors.green : Colors.black;
-}
+
+  List<String> deviceNames = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: <Widget>[
+        backgroundColor: Color.fromRGBO(99, 141, 204, 0.612),
+        actions: [
           PopupMenuButton<int>(
             itemBuilder: (context) => [
               PopupMenuItem(
-                //!!!!!!!!!!VER COMO MUDAR A COR DO FUNDO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                value: 1,
-                child: StatefulBuilder(
-                  builder: (context, setState) {
-                    return Container(
-                      color: _getBackgroundColor(_switchValue),
-                      child: Row(
-                        children: [
-                          Icon(Icons.bluetooth, color: Colors.black,),
-                          SizedBox(width: 15),
-                          Spacer(),
-                          Switch(
-                            value: _switchValue,
-                            onChanged: (value) {
-                              setState(() {
-                                _switchValue = value;
-                              });
-                              setState((){});
-                            },
-                            activeColor: Color.fromARGB(255, 38, 255, 0),
-                          ),
-                        ],
+                value:1 ,
+                child: Text('HC-06',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 0, 255, 8),
                       ),
-                    );
-                  },
                 ),
               ),
-            ],
-            icon: Icon(Icons.more_vert, color: Colors.white),
-            onSelected: (value) {
-              if (value == 1) {
-              }
-            }, 
+            ],            
           ),
         ],
-        backgroundColor: Colors.black,
       ),
       body: Column(
         children: [
-          //SizedBox(height: 1,),
           Expanded(
             child: Container(
               child: Stack(
@@ -92,25 +64,32 @@ Color _getBackgroundColor(bool switchValue) {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 90, bottom: 50),
                                   child: InkWell(
-                                    child: TriangularButton(
-                                      size: 160,
-                                      onPressed: () {
-                                        print('Botão triangular pressionado!');
-                                      },
+                                    onLongPress: () {
+                                      print('Botão pressionado! 1');
+                                    },
+                                    child: Image.asset(
+                                      'assets/button.png',
+                                      width: 150,
+                                      height: 150,
                                     ),
                                   ),
                                 ),
+
                                 Padding(
                                   padding: const EdgeInsets.only(left: 90, bottom: 60),
                                   child: Transform(
                                     alignment: Alignment.center,
                                     transform: Matrix4.rotationZ(pi),
-                                    child: TriangularButton(
-                                      size: 160,
-                                      onPressed: () {
-                                        print('Botão pressionado');
-                                      },
+                                    child: InkWell(
+                                    onLongPress: () {
+                                      print('Botão pressionado! 2');
+                                    },
+                                    child: Image.asset(
+                                      'assets/button.png',
+                                      width: 150,
+                                      height: 150,
                                     ),
+                                  ),
                                   ),
                                 ),
                               ],
@@ -128,12 +107,16 @@ Color _getBackgroundColor(bool switchValue) {
                                     child: Transform(
                                       alignment: Alignment.center,
                                       transform: Matrix4.rotationZ(-pi / 2),
-                                      child: TriangularButton(
-                                        size: 160,
-                                        onPressed: () {
-                                          print('Botão triangular pressionado');
-                                        },
-                                      ),
+                                      child: InkWell(
+                                    onLongPress: () {
+                                      print('Botão pressionado! 3');
+                                    },
+                                    child: Image.asset(
+                                      'assets/button.png',
+                                      width: 150,
+                                      height: 150,
+                                    ),
+                                  ),
                                     ),
                                   ),
                                   Padding(
@@ -141,12 +124,16 @@ Color _getBackgroundColor(bool switchValue) {
                                     child: Transform(
                                       alignment: Alignment.center,
                                       transform: Matrix4.rotationZ(pi / 2),
-                                      child: TriangularButton(
-                                        size: 160,
-                                        onPressed: () {
-                                          print('Botão triangular pressionado');
-                                        },
-                                      ),
+                                      child: InkWell(
+                                    onLongPress: () {
+                                      print('Botão pressionado! 4');
+                                    },
+                                    child: Image.asset(
+                                      'assets/button.png',
+                                      width: 150,
+                                      height: 150,
+                                    ),
+                                  ),
                                     ),
                                   ),
                                 ],
@@ -160,6 +147,18 @@ Color _getBackgroundColor(bool switchValue) {
                 ],
               ),
             ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'RREMOTERIDE'  ,
+                style: TextStyle(
+                  fontFamily: 'Micro5', 
+                  fontSize: 50
+                ),
+              ),
+            ],
           ),
         ],
       ),
