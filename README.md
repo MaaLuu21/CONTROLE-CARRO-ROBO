@@ -1,5 +1,6 @@
-# carro_app
+# TRABALHO DE CONCLUSÃO DE CURSO - RetroRide
 
-Projeto final de TCC.
+## FATEC - Ribeirão Preto
 
-FATEC - Ribeirão Preto
+#### Diagrama de caso de usooo
+<img src="/assets/diagrama01.jpeg>
