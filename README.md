@@ -4,4 +4,4 @@
 
 ### Diagrama de caso
 
-<assets src="/assets/diagrama01.jpeg">
+<img src="assets/diagrama01.jpeg" alt="Texto Alternativo">
