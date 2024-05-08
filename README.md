@@ -2,5 +2,6 @@
 
 ## FATEC - Ribeirão Preto
 
-#### Diagrama de caso de usooo
-<img src="/home/malu/tcc/controle/controle_carrinho_robo/assets/diagrama01.jpeg">
+### Diagrama de caso
+
+<assets src="/assets/diagrama01.jpeg">
