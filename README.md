@@ -3,4 +3,4 @@
 ## FATEC - Ribeirão Preto
 
 #### Diagrama de caso de usooo
-<img src="/assets/diagrama01.jpeg>
+<img src="![alt text](assets/diagrama01.jpeg)">
