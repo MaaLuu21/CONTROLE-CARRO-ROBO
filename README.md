@@ -9,3 +9,6 @@
 ### Diagrama de classes
 
 <img src="assets/diagrama02.jpeg" alt="Texto Alternativo">
+
+<img src="assets/diagrama02.jpeg" alt="Texto Alternativo">
+
