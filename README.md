@@ -10,8 +10,8 @@
 
 <img src="assets/diagrama02.jpeg" alt="Texto Alternativo">
 
-### **Carro robô montado**
-#### **Parte interna**
+**<u>Carro robô montado</u>**
+**Parte interna**
 
 <img src="assets/carro_parte_interna.jpeg" alt="Texto Alternativo">
 
