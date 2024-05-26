@@ -18,7 +18,7 @@ class _SplashscreenState extends State<Splashscreen> {
   }
   Widget build(BuildContext context) {
     return EasySplashScreen(
-      logo: Image.asset('assets/fundo-png.png'),
+      logo: Image.asset('assets/splash.png'),
       //logoWidth: 160,
       // ignore: prefer_const_constructors
       title: Text('SEJA BEM VINDO',

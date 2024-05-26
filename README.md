@@ -4,20 +4,20 @@
 
 ### Diagrama de caso de uso.
 
-<img src="assets/diagrama01.jpeg" alt="Texto Alternativo">
+<img src="assets/caso-de-uso.jpeg" alt="Texto Alternativo">
 
 ### Diagrama de classes.
 
 <img src="assets/diagrama02.jpeg" alt="Texto Alternativo">
 
-**_Carro robô montado_**
+**_Carro robô montado_:**
 
 
-**Parte interna**
+**PARTE INTERNA**
 
 <img src="assets/carro_parte_interna.jpeg" alt="Texto Alternativo">
 
-#### **Parte superior**
+**PARTE SUPERIOR**
 
 <img src="assets/carro_parte_superior.jpeg" alt="Texto Alternativo">
 

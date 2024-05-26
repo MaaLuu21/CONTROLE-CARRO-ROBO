@@ -65,7 +65,7 @@ class _ControleTelaState extends State<ControleTela> {
                                   padding: const EdgeInsets.only(left: 90, bottom: 50),
                                   child: InkWell(
                                     onLongPress: () {
-                                      print('Botão pressionado! 1');
+                                      print('Botão pressionado! 1');//CONFIRMAR SE O BOTÃO ESTÁ FUNCIONANDO
                                     },
                                     child: Image.asset(
                                       'assets/button.png',
@@ -82,7 +82,7 @@ class _ControleTelaState extends State<ControleTela> {
                                     transform: Matrix4.rotationZ(pi),
                                     child: InkWell(
                                     onLongPress: () {
-                                      print('Botão pressionado! 2');
+                                      print('Botão pressionado! 2');//CONFIRMAR SE O BOTÃO ESTÁ FUNCIONANDO
                                     },
                                     child: Image.asset(
                                       'assets/button.png',
@@ -109,7 +109,7 @@ class _ControleTelaState extends State<ControleTela> {
                                       transform: Matrix4.rotationZ(-pi / 2),
                                       child: InkWell(
                                     onLongPress: () {
-                                      print('Botão pressionado! 3');
+                                      print('Botão pressionado! 3');//CONFIRMAR SE O BOTÃO ESTÁ FUNCIONANDO
                                     },
                                     child: Image.asset(
                                       'assets/button.png',
@@ -126,7 +126,7 @@ class _ControleTelaState extends State<ControleTela> {
                                       transform: Matrix4.rotationZ(pi / 2),
                                       child: InkWell(
                                     onLongPress: () {
-                                      print('Botão pressionado! 4');
+                                      print('Botão pressionado! 4');//CONFIRMAR SE O BOTÃO ESTÁ FUNCIONANDO
                                     },
                                     child: Image.asset(
                                       'assets/button.png',

@@ -36,7 +36,7 @@ flutter:
   #         style: italic
 
   assets:
-   - assets/fundo-png.png
+   - assets/splash.png
    - assets/button.png
 
 
